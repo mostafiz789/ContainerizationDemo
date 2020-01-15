@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  samplemvcapp:
+    image: samplemvcapp
+    build:
+      context: .
+      dockerfile: SampleMVCApp/Dockerfile
+
+  sampleapiapp:
+    image: sampleapiapp:stage
+    build:
+      context: .
+      dockerfile: SampleApiApp/Dockerfile
+
+
+  sampleconsoleapp:
+    image: consoledemo
+    build:
+      context: .
+      dockerfile: SampleConsoleApp/Dockerfile
+
